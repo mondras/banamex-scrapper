@@ -1,4 +1,5 @@
 var casper = require('casper').create();
+var system = require('system');
 
 //URLs
 const loginUrl = 'https://bancanet.banamex.com/MXGCB/JPS/portal/Index.do';
@@ -75,13 +76,13 @@ var printAccount = function() {
 
 // Input user number
 casper.start(loginUrl, function() {
-  if(typeof casper.cli.options.user === 'undefined' ||
-     typeof casper.cli.options.pass === 'undefined') {
+  if(typeof system.env.BANAMEX_NUMBER === 'undefined' ||
+     typeof system.env.BANAMEX_PASS === 'undefined') {
     this.die('Check for missing parameters.');
   }
 
   this.fillXPath('form#preSignonForm', {
-    '//input[@id="textCliente"]': casper.cli.options.user + ''
+    '//input[@id="textCliente"]': system.env.BANAMEX_NUMBER + ''
   });
   this.click('#login > div.content > div > div.marginT15 > a');
 });
@@ -89,7 +90,7 @@ casper.start(loginUrl, function() {
 // Input password
 casper.then(function() {
   this.fillXPath('#preSignonForm2', {
-    '//*[@id="textFirma"]': casper.cli.options.pass + ''
+    '//*[@id="textFirma"]': system.env.BANAMEX_PASS + ''
   });
   this.click('#enterId');
 });
