@@ -1,8 +1,7 @@
 {
   "name": "banamex-scrapper",
   "version": "0.1.0",
-  "description": "CLI utility to download and translate bank statements into JSON so you can use them anywhere.",
-  "main": "index.js",
+  "description": "CLI utility to download and translate banamex bank statements into JSON so you can use them anywhere.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,7 +22,7 @@
     "url": "https://github.com/mondras/banamex-scrapper/issues"
   },
   "homepage": "https://github.com/mondras/banamex-scrapper#readme",
-  "dependencies": {
-    "casperjs": "^1.1.0-beta5"
+  "bin": {
+    "banamex-scrapper": "casperjs banamex-scrapper.js"
   }
 }
