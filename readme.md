@@ -19,8 +19,14 @@ npm install banamex-scapper
 
 ## Usage
 
+1. Set the environment variables:
+ * BANAMEX_NUMBER
+ * BANAMEX_PASS
+
+2. Just run
+
 ```
-banamex-scrapper --user=12345678 --pass=password
+banamex-scrapper
 ```
 
 This will return a JSON with the representation of the first account on your
