@@ -75,6 +75,11 @@ var printAccount = function() {
 
 // Input user number
 casper.start(loginUrl, function() {
+  if(typeof casper.cli.options.user === 'undefined' ||
+     typeof casper.cli.options.pass === 'undefined') {
+    this.die('Check for missing parameters.');
+  }
+
   this.fillXPath('form#preSignonForm', {
     '//input[@id="textCliente"]': casper.cli.options.user + ''
   });
