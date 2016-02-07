@@ -1,0 +1,29 @@
+{
+  "name": "banamex-scrapper",
+  "version": "0.1.0",
+  "description": "CLI utility to download and translate bank statements into JSON so you can use them anywhere.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mondras/banamex-scrapper.git"
+  },
+  "keywords": [
+    "banamex",
+    "scrapper",
+    "cli",
+    "bank",
+    "statement"
+  ],
+  "author": "Carlos Mondragon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mondras/banamex-scrapper/issues"
+  },
+  "homepage": "https://github.com/mondras/banamex-scrapper#readme",
+  "dependencies": {
+    "casperjs": "^1.1.0-beta5"
+  }
+}
