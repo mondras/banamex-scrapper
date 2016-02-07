@@ -1,9 +1,8 @@
 Banamex scrapper
 ===========
 
-I built this small command line utility that all it does it run a
-[CasperJS](http://casperjs.org) script to automate extracting financial
-statements for Banamex accounts.
+Command line utility that gets a JSON of your Banamex accounts.
+It runs a [CasperJS](http://casperjs.org) script and transforms the data.
 
 ## Installation
 
