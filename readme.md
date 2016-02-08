@@ -10,7 +10,7 @@ Before installing make sure you have the following requirements
 
   * **CasperJS 1.1** or greater
   * **PhantomJS 1.9.1** or greater.
-  * **Python 2.6 ** or greater.
+  * **Python 2.6** or greater.
 
 To install just type:
 
