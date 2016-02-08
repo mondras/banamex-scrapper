@@ -8,12 +8,14 @@ It runs a [CasperJS](http://casperjs.org) script and transforms the data.
 
 Before installing make sure you have the following requirements
 
-  * **CasperJS 1.1**
+  * **CasperJS 1.1** or greater
+  * **PhantomJS 1.9.1** or greater.
+  * **Python 2.6 ** or greater.
 
 To install just type:
 
 ```
-npm install banamex-scapper
+git clone git@github.com:mondras/banamex-scrapper.git
 ```
 
 ## Usage
@@ -25,7 +27,7 @@ npm install banamex-scapper
 2. Just run
 
 ```
-banamex-scrapper
+casperjs banamex-scrapper.js
 ```
 
 This will return a JSON with the representation of the first account on your
